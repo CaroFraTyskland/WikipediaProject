@@ -1,7 +1,8 @@
-package templates.weblinks;
+package templates.sources;
 
 import politics.StortingAPI.StortingMember;
 import politics.StortingAPI.StortingMemberInfo;
+import templates.Weblinks;
 
 public class StortingSource {
 

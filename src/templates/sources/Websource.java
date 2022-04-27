@@ -1,4 +1,6 @@
-package templates.weblinks;
+package templates.sources;
+
+import templates.Weblinks;
 
 public class Websource {
 

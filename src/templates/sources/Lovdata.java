@@ -1,4 +1,6 @@
-package templates.weblinks;
+package templates.sources;
+
+import templates.Weblinks;
 
 public class Lovdata {
 
@@ -9,12 +11,12 @@ public class Lovdata {
     }
 
     /**
-     * Writes the source for a lovdata page.
+     * Returns the reference for a lovdata page.
      *
      * @param url  the url
      * @param name the name of the law
      * @param date the date the law was published
-     * @return the source
+     * @return the reference
      */
     public static String writeLovdataSource(String url, String name, String date) {
         return "<ref>{{Internetquelle |url=" + url + " |titel=" + name + " |werk=Lovdata |datum=" + date + " |abruf=" + Weblinks.getTodaysDate() + " |sprache=no}}</ref>";

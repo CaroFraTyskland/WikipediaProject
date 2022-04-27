@@ -1,6 +1,6 @@
 package basics.norway;
 
-import templates.weblinks.Lovdata;
+import templates.sources.Lovdata;
 
 public enum Language {
 
@@ -13,21 +13,12 @@ public enum Language {
      * @return the language
      */
     public static Language getLanguageByAbbreviation(String abbr) {
-        switch (abbr.toLowerCase()) {
-            case "b":
-            case "bok":
-            case "bm":
-                return BOKMAAL;
-            case "nn":
-            case "ny":
-            case "nynorsk":
-                return NYNORSK;
-            case "n":
-            case "neutral":
-                return NEUTRAL;
-            default:
-                return null;
-        }
+        return switch (abbr.toLowerCase()) {
+            case "b", "bok", "bm" -> BOKMAAL;
+            case "nn", "ny", "nynorsk" -> NYNORSK;
+            case "n", "neutral" -> NEUTRAL;
+            default -> null;
+        };
     }
 
     /**

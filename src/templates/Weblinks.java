@@ -1,4 +1,4 @@
-package templates.weblinks;
+package templates;
 
 import java.util.Calendar;
 
