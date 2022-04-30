@@ -55,7 +55,7 @@ public class ApiConversion {
      * @param text the text
      * @return the data of the representatives
      */
-    static List<StortingMemberListData> getStortingRepData(String text) {
+    public static List<StortingMemberListData> getStortingRepData(String text) {
         List<StortingMemberListData> list = new ArrayList<>();
 
         /*
